@@ -1,1 +1,173 @@
-[]
+{
+  "list": [
+    {
+      "objectID": "693ef6b2752af11c23f07b74a4506d35",
+      "platform_id": "kakao",
+      "datetime_start": "2607240830",
+      "product_cnt": 23,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "CJ제일제당 든든한 한상차림 햇반 함박 외 골라담기",
+      "cid": 50000026
+    },
+    {
+      "objectID": "73a069efbd01b6bcf0646351ca55f112",
+      "platform_id": "kakao",
+      "datetime_start": "2607240830",
+      "product_cnt": 28,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "셀리맥스 ~75% 할인 쿠폰+카카오페이머니 추가할인",
+      "cid": 50000190,
+      "ad_channel": [
+        "cshwk_money"
+      ]
+    },
+    {
+      "objectID": "9abf97a6d56de2032e3306a97df33560",
+      "platform_id": "cjonstyle",
+      "datetime_start": "2607240900",
+      "product_cnt": 60,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "공홈보다 저렴한 톰보이 역시즌 단독 특가 67% ❤️",
+      "cid": 50000167
+    },
+    {
+      "objectID": "a6a5ad01d352357930a981c48dd54afb",
+      "platform_id": "naver",
+      "datetime_start": "2607240800",
+      "product_cnt": 40,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "[AI라이브] 🏡TV,사운드바,공청기, 오늘 다솜에서 가전 다품목!",
+      "cid": 50000212
+    },
+    {
+      "objectID": "08cbf9e983818506802d883d796d4e06",
+      "platform_id": "naver",
+      "datetime_start": "2607240800",
+      "product_cnt": 57,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "[AI]⭐에어케어⭐ 삼성이 선물하는 스마트 라이프",
+      "cid": 50000212
+    },
+    {
+      "objectID": "d925285ce4c8b1c626a1d4e0e764c8e7",
+      "platform_id": "naver",
+      "datetime_start": "2607240759",
+      "product_cnt": 45,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "[Live추가적립] LG전자 에어컨·냉장고 AI 할인혜택 안내 라이브",
+      "cid": 50000212
+    },
+    {
+      "objectID": "9fa01764a1e7a9f7ce7496d697331340",
+      "platform_id": "kakao",
+      "datetime_start": "2607240830",
+      "product_cnt": 16,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "프리메라 ~18%할인+쿠폰 카카오페이머니 추가할인까지",
+      "cid": 50000190
+    },
+    {
+      "objectID": "1cd297a536952f9a266dcb2577747d69",
+      "platform_id": "kakao",
+      "datetime_start": "2607240830",
+      "product_cnt": 20,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "비플레인 녹두 샤벳 마스크 단독 론칭 최대 68% 할인",
+      "cid": 50000190
+    },
+    {
+      "objectID": "2fe2360b58784e8f0fa1652cdcc48f21",
+      "platform_id": "naver",
+      "datetime_start": "2607240803",
+      "product_cnt": 48,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "💥삼성 에어컨 냉장고 김치냉장고 키친핏 세트 Live사은품🎁[AI]",
+      "cid": 50000213
+    },
+    {
+      "objectID": "11adcae0b945e969620518366caf2b8b",
+      "platform_id": "hmall",
+      "datetime_start": "2607240900",
+      "product_cnt": 13,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "편안한 신발의 원조, 스케쳐스 최대 30%▼ + 쿠폰",
+      "cid": 50000173
+    },
+    {
+      "objectID": "94af4338a342c4f4ff1daaa2fc377b08",
+      "platform_id": "naver",
+      "datetime_start": "2607240900",
+      "product_cnt": 45,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "🏆 단독혜택 삼성 갤럭시워치8 클래식 링 핏 보조배터리",
+      "cid": 50000205
+    },
+    {
+      "objectID": "1970eec930c3870f8d04209798471ab3",
+      "platform_id": "naver",
+      "datetime_start": "2607240900",
+      "product_cnt": 28,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "[Ai Live] LG그램 프로 & 그램북 노트북 14/15/16/17형",
+      "cid": 50000151
+    },
+    {
+      "objectID": "8f3d9a00aec5b0ef80bf6f3b9f930ab4",
+      "platform_id": "naver",
+      "datetime_start": "2607240759",
+      "product_cnt": 18,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "LG그램 ~97만 즉시할인! 윈도우 or 인치 무료 업글🎁EVENT🎈",
+      "cid": 50000151
+    },
+    {
+      "objectID": "9df93b0ab21c0441a572596bc2180f05",
+      "platform_id": "naver",
+      "datetime_start": "2607240800",
+      "product_cnt": 12,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "✅삼성 에어컨 AI 라이브행사! 상품권증정혜택🎁",
+      "cid": 50000212
+    },
+    {
+      "objectID": "8161b15e5de1c58806091ca7e19936ca",
+      "platform_id": "gsshop",
+      "datetime_start": "2607240900",
+      "product_cnt": 2,
+      "visit_cnt": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "title": "[가히 멀티밤] 고객 감사 특별 헌정 구성 대공개!",
+      "cid": 50000190
+    }
+  ],
+  "mask": true
+}

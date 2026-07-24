@@ -1,1 +1,271 @@
-[]
+{
+  "list": [
+    {
+      "hsshow_id": "a6f8c70dbc5c8d91e1c5c7590f0575f1",
+      "platform_id": "hs_hmall",
+      "platform_name": "현대홈쇼핑",
+      "hsshow_title": "이상봉에디션 26SS 보니타 위빙백 라지 (+파우치 포함)",
+      "hsshow_datetime_start": "202607240815",
+      "hsshow_datetime_end": "202607241025",
+      "hsshow_url_live": "https://www.hmall.com/pd/pda/itemPtc?slitmCd=2250945121",
+      "item_cnt": 17,
+      "cid": 50000167,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000000,
+        "cat_name": "패션의류"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "dc73c9e3162a28319d0eefaff77022f3",
+      "platform_id": "hs_cjonstyleplus",
+      "platform_name": "CJ온스타일 플러스",
+      "hsshow_title": "[온플] 26SS 레이스 커프스 블라우스",
+      "hsshow_datetime_start": "202607240915",
+      "hsshow_datetime_end": "202607240945",
+      "hsshow_url_live": "https://display.cjonstyle.com/p/item/2076019838",
+      "item_cnt": 5,
+      "cid": 50000167,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000000,
+        "cat_name": "패션의류"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "e7856b801df7040cc89986222dfa2e5a",
+      "platform_id": "hs_lotteimall",
+      "platform_name": "롯데홈쇼핑",
+      "hsshow_title": "[루미너스] SILVER 925 빅볼륨 비앙코 목걸이 + 크리스 크로스 목걸이 + 프린세스 10캐럿 테니스 팔찌 + 스네이크 목걸이 팔찌 세트",
+      "hsshow_datetime_start": "202607240905",
+      "hsshow_datetime_end": "202607241025",
+      "hsshow_url_live": "https://www.lotteimall.com/goods/viewGoodsDetail.lotte?goods_no=12915368",
+      "item_cnt": 12,
+      "cid": 50000189,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000001,
+        "cat_name": "패션잡화"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "5800de95ea3c61012f0b032ab66734c7",
+      "platform_id": "hs_hmallplus",
+      "platform_name": "현대홈쇼핑 플러스샵",
+      "hsshow_title": "[26년수확][첫] 국내산 청결 햇 고춧가루 4kg(500g 8팩)",
+      "hsshow_datetime_start": "202607240840",
+      "hsshow_datetime_end": "202607240959",
+      "hsshow_url_live": "https://www.hmall.com/pd/pda/itemPtc?slitmCd=2252018084",
+      "item_cnt": 2,
+      "cid": 50000160,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000006,
+        "cat_name": "식품"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "4cb4a37a3e87d6c0fa64e80d4766115b",
+      "platform_id": "hs_nsmallshopplus",
+      "platform_name": "NS홈쇼핑 샵플러스",
+      "hsshow_title": "밀레슈즈1",
+      "hsshow_datetime_start": "202607240841",
+      "hsshow_datetime_end": "202607240941",
+      "hsshow_url_live": "https://m.nsmall.com/store/atypical/tv-shopping",
+      "item_cnt": 2,
+      "cid": 50000173,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000001,
+        "cat_name": "패션잡화"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "75493f74bf9e676355f743d64d3fc222",
+      "platform_id": "hs_gongyoung",
+      "platform_name": "공영쇼핑",
+      "hsshow_title": "[영광 법성포] 굴비로 찢어 만든 참맛 고추장굴비 200g × 5통",
+      "hsshow_datetime_start": "202607240920",
+      "hsshow_datetime_end": "202607241025",
+      "hsshow_url_live": "https://www.gongyoungshop.kr/goods/selectGoodsDetail.do?prdId=11907859",
+      "item_cnt": 1,
+      "cid": 50000149,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000006,
+        "cat_name": "식품"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "94c81e2575ee812c6ec1785d1a4f0e19",
+      "platform_id": "hs_lotteimallonetv",
+      "platform_name": "롯데원티비",
+      "hsshow_title": "[프리메로] ★방송에서만 70프로 세일★ 프리메로 NFC 유기농 레몬즙 10박스 (1박스: 20g x 14포)",
+      "hsshow_datetime_start": "202607240840",
+      "hsshow_datetime_end": "202607240940",
+      "hsshow_url_live": "https://www.lotteimall.com/goods/viewGoodsDetail.lotte?goods_no=12914537",
+      "item_cnt": 1,
+      "cid": 50000023,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000006,
+        "cat_name": "식품"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "7c8a7900a9ccbcbb35c334e833982e10",
+      "platform_id": "hs_nsmall",
+      "platform_name": "NS홈쇼핑",
+      "hsshow_title": "비에날씬프로",
+      "hsshow_datetime_start": "202607240925",
+      "hsshow_datetime_end": "202607241025",
+      "hsshow_url_live": "https://m.nsmall.com/store/atypical/tv-shopping",
+      "item_cnt": 24,
+      "cid": 50000023,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000006,
+        "cat_name": "식품"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "8b219b965745d2a1bc0f382dd9083207",
+      "platform_id": "hs_cjonstyle",
+      "platform_name": "CJ온스타일",
+      "hsshow_title": "하이퍼셀 NMN 셀프라임 앰플 6ml * 14개*3박스+리뷰시 톤업선크림",
+      "hsshow_datetime_start": "202607240920",
+      "hsshow_datetime_end": "202607241025",
+      "hsshow_url_live": "https://display.cjonstyle.com/m/tvliveTalk/main",
+      "item_cnt": 2,
+      "cid": 50000190,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000002,
+        "cat_name": "화장품/미용"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "1ea5a4699de2e8a082aca6508f1122ae",
+      "platform_id": "hs_hnsmall",
+      "platform_name": "홈앤쇼핑",
+      "hsshow_title": "[닥터파이토] 파이토블락 코엔삼백초 12개월분",
+      "hsshow_datetime_start": "202607240925",
+      "hsshow_datetime_end": "202607241025",
+      "hsshow_url_live": "http://www.hnsmall.com/display/goods.do?goods_code=81854664",
+      "item_cnt": 3,
+      "cid": 50000023,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000006,
+        "cat_name": "식품"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "c22d728a60f400a4db04ba337868e518",
+      "platform_id": "hs_kshop",
+      "platform_name": "KT알파쇼핑",
+      "hsshow_title": "종근당건강_알티지오메가3",
+      "hsshow_datetime_start": "202607240931",
+      "hsshow_datetime_end": "202607241011",
+      "hsshow_url_live": "https://m.kshop.co.kr/display/product/7508586",
+      "item_cnt": 1,
+      "cid": 50000023,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000006,
+        "cat_name": "식품"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "0955f54994c533c64d073df827ccce5d",
+      "platform_id": "hs_shinsegae",
+      "platform_name": "신세계쇼핑",
+      "hsshow_title": "더블] 웰라쥬 시즌3 히알루론산 캡슐 151회분 앰플2병 구성 체험분 포함",
+      "hsshow_datetime_start": "202607240932",
+      "hsshow_datetime_end": "202607241032",
+      "hsshow_url_live": "https://v.kr.kollus.com/sr?jwt=eyJhbGciOiAiSFMyNTYiLCJ0eXAiOiAiSldUIn0.eyJjdWlkIjoic2hpbnNlZ2FldHZzaG9wcGluZyIsImV4cHQiOjE4MTYzODkxMDIsIm1jIjpbeyJtY2tleSI6IkswMTRHWkJ2In1dfQ.bZ7Vthgs7_OKP0R15kxdejN8l3eM-fOKJ6_3-WKxWNw&custom_key=9b696e956bfdd408c4a4c8101d1cda1a71ab454d0327496d97a929793eeedd63",
+      "item_cnt": 4,
+      "cid": 50000190,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000002,
+        "cat_name": "화장품/미용"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "988f655571f1e086682fc3dce55a79c5",
+      "platform_id": "hs_skstoa",
+      "platform_name": "SK스토아",
+      "hsshow_title": "[50프로세일] 콘드로이친 콘레이티+MBP 12개월분(리뉴얼) | 원산지 : 상품정보 참조",
+      "hsshow_datetime_start": "202607240931",
+      "hsshow_datetime_end": "202607241031",
+      "hsshow_url_live": "https://vodcdn.skstoa.com/bshopping/37245098_닥터린50프로세일_콘드로이친_콘레이티_MBP_12개월분(리뉴얼)_H264_CT_V000000340387.mp4",
+      "item_cnt": 2,
+      "cid": 50000023,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000006,
+        "cat_name": "식품"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "4caf0c2edb5aefa095864633af3dec93",
+      "platform_id": "hs_shopntmall",
+      "platform_name": "쇼핑엔티",
+      "hsshow_title": "도티 26SS 썸머 인견 데님 여성 2종 (D6B8W)",
+      "hsshow_datetime_start": "202607240935",
+      "hsshow_datetime_end": "202607241035",
+      "hsshow_url_live": null,
+      "item_cnt": 2,
+      "cid": 50000167,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "cat": {
+        "cid": 50000000,
+        "cat_name": "패션의류"
+      },
+      "visit_cnt": null
+    },
+    {
+      "hsshow_id": "70f26df415d12ab9e650944a2cf31fbd",
+      "platform_id": "hs_gsshop",
+      "platform_name": "GS홈쇼핑",
+      "hsshow_title": "[방송 중에만 상담예약 가능] (무)우리WON하는실속하나로암보험",
+      "hsshow_datetime_start": "202607240925",
+      "hsshow_datetime_end": "202607241025",
+      "hsshow_url_live": "https://www.gsshop.com/shop/tv/tvProductMain.gs",
+      "item_cnt": 0,
+      "cid": null,
+      "sales_cnt": null,
+      "sales_amt": null,
+      "visit_cnt": null
+    }
+  ],
+  "mask": true
+}
