@@ -14,7 +14,7 @@ function ItemList({ broadcastType, items }: ItemListProps) {
         <p>표시할 방송 데이터가 없습니다.</p>
       ) : (
         <ul>
-          {items.map((item) => (
+          {items.slice(0, 10).map((item) => (
             <li key={item.id}>
               {item.rank}. {item.title}
             </li>
