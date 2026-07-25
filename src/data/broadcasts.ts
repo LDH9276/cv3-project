@@ -16,6 +16,7 @@ function normalizeLiveBroadcast(
   return {
     id: item.objectID,
     rank: index + 1,
+    platformName: item.platform_id,
     title: item.title,
     category: String(item.cid),
     broadcastTime: item.datetime_start,
@@ -34,6 +35,7 @@ function normalizeHomeShoppingBroadcast(
   return {
     id: item.hsshow_id,
     rank: index + 1,
+    platformName: item.platform_name,
     title: item.hsshow_title,
     category: item.cat?.cat_name ?? String(item.cid ?? '-'),
     broadcastTime: `${item.hsshow_datetime_start} ~ ${item.hsshow_datetime_end}`,

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '@/App.css'
 import ItemList from '@/components/ItemList'
 import { broadcastsByType } from '@/data/broadcasts'
 import type { BroadcastType } from '@/types/broadcast'

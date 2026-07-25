@@ -3,6 +3,7 @@ export type BroadcastType = 'live' | 'homeShopping'
 export interface BroadcastItem {
   id: string
   rank: number
+  platformName: string
   title: string
   category: string
   broadcastTime: string
@@ -16,6 +17,7 @@ export interface BroadcastItem {
 export interface LiveRawItem {
   objectID: string
   platform_id: string
+  platform_name: string
   datetime_start: string
   product_cnt: number
   visit_cnt: number | null

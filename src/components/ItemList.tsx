@@ -13,16 +13,15 @@ function ItemList({ broadcastType, items }: ItemListProps) {
       {items.length === 0 ? (
         <p>표시할 방송 데이터가 없습니다.</p>
       ) : (
-        <ul>
+        <ul className='data-label'>
           {items.slice(0, 10).map((item) => (
             <li key={item.id}>
-              <p>{item.title}</p>
-              <p>카테고리: {item.category}</p>
+              <p className='item-title'>{item.title}</p>
+              <p>플랫폼 명: {item.platformName}</p>
               <p>방송 시간: {item.broadcastTime}</p>
               <p>{item.metricLabel}: {item.metricValue}</p>
               <p>판매량: {item.sales}</p>
               <p>매출: {item.revenue}</p>
-              <p>상품 수: {item.productCount}</p>
             </li>
           ))}
         </ul>
