@@ -1,16 +1,26 @@
 # CV3 기술과제
 
-기술과제입니다.
+방송 데이터를 탭별로 표시하는 React 기술과제 프로젝트입니다. 데이터는 API 호출 없이 로컬 JSON 파일로 관리합니다.
 
-1. 데이터 추출법
-데이터의 추출의 경우 API 서버의 경우 인증이 불가능하다 생각되어
-POST MAN을 통해 list의 내용을 추출해 적용했습니다.
-src/data에 두었습니다만, 추후 이 부분은 API 서버 이용시 받아올 수 있게 수정하면 될 것 같습니다.
+## 기술 스택
 
-2. 각 메뉴의 타입 지정
-둘 다 같은 항목을 지니지만 다른 항목이 있어
-normalize를 해서 처리했습니다. 가령 YYMMDD HMS이거나 YYYYMMDD HMS형식으로 되어 있습니다.
-또한 플랫폼 명도 다르게 되어 있어 일단 수정을 해두었습니다. (liveCategoryPlatforms)
+- React
+- Vite
+- TypeScript
+- Bun
+- CSS
+- Tailwind Preflight (전역 CSS reset 용도만 사용)
+- JSON
+- lucide-react
+- Oxlint
+
+## 데이터 처리
+
+- 라이브 방송: `src/data/live-broadcasts.json`
+- 홈쇼핑 방송: `src/data/home-shopping-broadcasts.json`
+- 두 JSON의 서로 다른 필드 구조는 `src/data/broadcasts.ts`에서 `BroadcastItem` 공통 타입으로 정규화합니다.
+- 방송 시간은 `YYMMDDHHmm`과 `YYYYMMDDHHmm` 형식을 지원합니다.
+- 통계 데이터가 `null`이면 화면에서 잠김 상태로 표시합니다.
 
 ## 실행 환경
 
@@ -34,13 +44,14 @@ bun run dev
 bun run build
 ```
 
+## 린트
+
+```bash
+bun run lint
+```
+
 ## 미리보기
 
 ```bash
 bun run preview
 ```
-
-## 데이터 파일
-
-- `src/data/live-broadcasts.json`
-- `src/data/home-shopping-broadcasts.json`
