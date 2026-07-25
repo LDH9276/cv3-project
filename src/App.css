@@ -1,4 +1,9 @@
-/* 퍼블리싱 스타일은 제작자가 추가합니다. */
+@import url("https://cdn.jsdelivr.net/gh/Jihwan-Suh/PyeojinGothic/CSS/pyeojin-font.css");
+
+html{
+  font-family: 'PyeojinGothic';
+}
+
 .data-label{
   margin: 0;
   padding: 0;
@@ -39,6 +44,16 @@
   display: grid;
   gap: 0.25rem;
   white-space: nowrap;
+
+  .broadcast-date{
+    display: flex;
+    gap: 0.5em;
+  }
+
+  & > span{
+    font-size: 14px;
+    color: #999;
+  }
 }
 
 .locked-control{

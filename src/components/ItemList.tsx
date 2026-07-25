@@ -54,15 +54,26 @@ function ItemList({ broadcastType, items }: ItemListProps) {
         <p>표시할 방송 데이터가 없습니다.</p>
       ) : (
         <ul className='data-label'>
-          <li className='data-legend'>
-            <span>방송정보</span>
-            <span>분류</span>
-            <span>방송시간</span>
-            <span>조회수</span>
-            <span>판매량</span>
-            <span>매출액</span>
-            <span>상품수</span>
-          </li>
+          {broadcastType === 'live' ?
+            <li className='data-legend'>
+              <span>방송정보</span>
+              <span>분류</span>
+              <span>방송시간</span>
+              <span>조회수</span>
+              <span>판매량</span>
+              <span>매출액</span>
+              <span>상품수</span>
+            </li> :
+            <li>
+              <span>방송정보</span>
+              <span>분류</span>
+              <span>방송시간</span>
+              <span>시청률</span>
+              <span>판매량</span>
+              <span>매출액</span>
+              <span>상품수</span>
+            </li>
+          }
 
           {items.slice(0, 10).map((item) => (
             <li key={item.id}>
@@ -72,8 +83,10 @@ function ItemList({ broadcastType, items }: ItemListProps) {
               </div>
               <span>{item.category}</span>
               <div className='broadcast-datetime'>
-                <span>{item.broadcastDate}</span>
-                <span>({item.broadcastWeekday})</span>
+                <div className="broadcast-date">
+                  <span>{item.broadcastDate}</span>
+                  <span>({item.broadcastWeekday})</span>
+                </div>
                 <span>{item.broadcastTime}</span>
               </div>
               <DataValue value={item.metricValue} />
