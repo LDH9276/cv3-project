@@ -26,7 +26,7 @@ function DataValue({ value }: DataValueProps) {
             onClick={() => setIsHintOpen((current) => !current)}
             type='button'
           >
-            잠김
+            로그인
           </button>
           {isHintOpen && (
             <div aria-live='polite' className='locked-hint' id={hintId}>
@@ -74,8 +74,11 @@ function ItemList({ broadcastType, items }: ItemListProps) {
           {items.slice(0, 10).map((item) => (
             <li key={item.id}>
               <div className='title-wrap'>
-                <p className='item-title'>{item.title}</p>
-                <p className='item-platform'>{item.platformName}</p>
+                <p className="item-rank">{item.rank}</p>
+                <div className="item-title-wrap">
+                  <p className='item-title'>{item.title}</p>
+                  <p className='item-platform'>{item.platformName}</p>
+                </div>
               </div>
               <span>{item.category}</span>
               <div className='broadcast-datetime'>

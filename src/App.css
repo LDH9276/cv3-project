@@ -43,7 +43,19 @@ main{
 }
 
 .title-wrap{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.item-rank{
   display: block;
+  width: 24px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.item-title-wrap{
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
