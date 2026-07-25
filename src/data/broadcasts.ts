@@ -17,6 +17,15 @@ const liveCategoryNames: Readonly<Record<number, string>> = {
   50000213: '디지털/가전',
 }
 
+// 라이브 방송 원본의 플랫폼 ID를 화면에 표시할 플랫폼명으로 변환합니다.
+const liveCategoryPlatforms: Readonly<Record<string, string>> = {
+  cjonstyle: 'CJ온스타일',
+  gsshop: 'GS SHOP',
+  hmall: '현대홈쇼핑',
+  kakao: '카카오 쇼핑',
+  naver: '네이버 쇼핑',
+}
+
 // null 값을 유지해 화면에서 잠김 상태를 별도로 렌더링할 수 있도록 숫자를 문자열로 변환합니다.
 function formatNumber(value: number | null): string | null {
   return value === null ? null : value.toLocaleString('ko-KR')
@@ -27,6 +36,11 @@ function getLiveCategoryName(categoryId: number | null) {
   return categoryId === null
     ? '-'
     : (liveCategoryNames[categoryId] ?? String(categoryId))
+}
+
+// 플랫폼 ID가 매핑에 없을 때도 원본 ID를 화면에 표시할 수 있도록 플랫폼명을 반환합니다.
+function getLivePlatformName(platformId: string) {
+  return liveCategoryPlatforms[platformId] ?? platformId
 }
 
 interface BroadcastDateTime {
@@ -82,7 +96,7 @@ function normalizeLiveBroadcast(
   return {
     id: item.objectID,
     rank: index + 1,
-    platformName: item.platform_id,
+    platformName: getLivePlatformName(item.platform_id),
     title: item.title,
     category: getLiveCategoryName(item.cid),
     broadcastDate: broadcastDateTime.date,
