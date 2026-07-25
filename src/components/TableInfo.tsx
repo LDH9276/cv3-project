@@ -16,13 +16,7 @@ function ItemList({ broadcastType, items }: ItemListProps) {
         <ul>
           {items.slice(0, 10).map((item) => (
             <li key={item.id}>
-              <p>{item.title}</p>
-              <p>카테고리: {item.category}</p>
-              <p>방송 시간: {item.broadcastTime}</p>
-              <p>{item.metricLabel}: {item.metricValue}</p>
-              <p>판매량: {item.sales}</p>
-              <p>매출: {item.revenue}</p>
-              <p>상품 수: {item.productCount}</p>
+              {item.title}
             </li>
           ))}
         </ul>
