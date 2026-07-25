@@ -25,6 +25,12 @@
   text-overflow: ellipsis;
 }
 
+.broadcast-datetime{
+  display: grid;
+  gap: 0.25rem;
+  white-space: nowrap;
+}
+
 .locked-control{
   position: relative;
 }

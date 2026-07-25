@@ -10,9 +10,14 @@ function formatNumber(value: number | null): string | null {
   return value === null ? null : value.toLocaleString('ko-KR')
 }
 
-function formatBroadcastTime(value: string) {
+interface BroadcastDateTime {
+  date: string
+  time: string
+}
+
+function formatBroadcastDateTime(value: string): BroadcastDateTime {
   if (!/^\d{10}(\d{2})?$/.test(value)) {
-    return value
+    return { date: value, time: '' }
   }
 
   const yearLength = value.length === 12 ? 4 : 2
@@ -31,30 +36,33 @@ function formatBroadcastTime(value: string) {
     date.getHours() !== hour ||
     date.getMinutes() !== minute
   ) {
-    return value
+    return { date: value, time: '' }
   }
 
-  return date.toLocaleString('ko-KR', {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-    hourCycle: 'h23',
-  })
+  const twoDigits = (number: number) =>
+    number.toLocaleString('ko-KR', { minimumIntegerDigits: 2, useGrouping: false })
+  const weekday = date.toLocaleDateString('ko-KR', { weekday: 'short' })
+
+  return {
+    date: `${twoDigits(year % 100)}.${twoDigits(month)}.${twoDigits(day)} (${weekday})`,
+    time: `${twoDigits(hour)}:${twoDigits(minute)}`,
+  }
 }
 
 function normalizeLiveBroadcast(
   item: LiveBroadcast,
   index: number,
 ): BroadcastItem {
+  const broadcastDateTime = formatBroadcastDateTime(item.datetime_start)
+
   return {
     id: item.objectID,
     rank: index + 1,
     platformName: item.platform_id,
     title: item.title,
     category: String(item.cid),
-    broadcastTime: formatBroadcastTime(item.datetime_start),
+    broadcastDate: broadcastDateTime.date,
+    broadcastTime: broadcastDateTime.time,
     metricLabel: '조회수',
     metricValue: formatNumber(item.visit_cnt),
     sales: formatNumber(item.sales_cnt),
@@ -67,13 +75,16 @@ function normalizeHomeShoppingBroadcast(
   item: HomeShoppingBroadcast,
   index: number,
 ): BroadcastItem {
+  const broadcastDateTime = formatBroadcastDateTime(item.hsshow_datetime_start)
+
   return {
     id: item.hsshow_id,
     rank: index + 1,
     platformName: item.platform_name,
     title: item.hsshow_title,
     category: item.cat?.cat_name ?? String(item.cid ?? '-'),
-    broadcastTime: `${formatBroadcastTime(item.hsshow_datetime_start)} ~ ${formatBroadcastTime(item.hsshow_datetime_end)}`,
+    broadcastDate: broadcastDateTime.date,
+    broadcastTime: broadcastDateTime.time,
     metricLabel: '조회수',
     metricValue: formatNumber(item.visit_cnt),
     sales: formatNumber(item.sales_cnt),

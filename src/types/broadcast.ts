@@ -6,6 +6,7 @@ export interface BroadcastItem {
   platformName: string
   title: string
   category: string
+  broadcastDate: string
   broadcastTime: string
   metricLabel: '조회수' | '시청률'
   // 원본 데이터의 null을 유지해 화면에서 잠김 상태로 표시합니다.

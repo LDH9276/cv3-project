@@ -77,7 +77,10 @@ function ItemList({ broadcastType, items }: ItemListProps) {
                 <p className='item-title'>{item.title}</p>
                 <p className='item-platform'>{item.platformName}</p>
               </div>
-              <p>{item.broadcastTime}</p>
+              <div className='broadcast-datetime'>
+                <span>{item.broadcastDate}</span>
+                <span>{item.broadcastTime}</span>
+              </div>
               <DataValue value={item.metricValue} />
               <DataValue value={item.sales} />
               <DataValue value={item.revenue} />
