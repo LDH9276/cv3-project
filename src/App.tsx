@@ -13,7 +13,7 @@ function App() {
     <main>
       <h1>CV3 기술과제</h1>
 
-      <div aria-label="방송 유형" role="tablist">
+      <div aria-label="방송 유형" role="tablist" className='tab-button'>
         <button
           aria-selected={broadcastType === 'live'}
           onClick={() => setBroadcastType('live')}

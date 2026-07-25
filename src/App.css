@@ -4,6 +4,24 @@ html{
   font-family: 'PyeojinGothic';
 }
 
+main{
+  padding: 0 16px;
+}
+
+.tab-button{
+  display: flex;
+  margin: 16px 0px;
+  gap: 0.5em;
+  
+  button{
+    display: block;
+    height: 2em;
+    padding: 0 1em;
+    border-radius: 124px;
+    border: 2px solid #ddd;
+  }
+}
+
 .data-label{
   margin: 0;
   padding: 0;

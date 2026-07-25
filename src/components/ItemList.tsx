@@ -46,10 +46,6 @@ function ItemList({ broadcastType, items }: ItemListProps) {
 
   return (
     <section aria-label={broadcastType === 'live' ? '라이브 방송 목록' : '홈쇼핑 목록'}>
-      <h2>{broadcastType === 'live' ? '라이브 방송' : '홈쇼핑 방송'}</h2>
-
-
-
       {items.length === 0 ? (
         <p>표시할 방송 데이터가 없습니다.</p>
       ) : (
@@ -64,7 +60,7 @@ function ItemList({ broadcastType, items }: ItemListProps) {
               <span>매출액</span>
               <span>상품수</span>
             </li> :
-            <li>
+            <li className='data-legend'>
               <span>방송정보</span>
               <span>분류</span>
               <span>방송시간</span>
