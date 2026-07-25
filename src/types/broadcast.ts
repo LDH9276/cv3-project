@@ -8,10 +8,11 @@ export interface BroadcastItem {
   category: string
   broadcastTime: string
   metricLabel: '조회수' | '시청률'
-  metricValue: string
-  sales: string
-  revenue: string
-  productCount: string
+  // 원본 데이터의 null을 유지해 화면에서 잠김 상태로 표시합니다.
+  metricValue: string | null
+  sales: string | null
+  revenue: string | null
+  productCount: string | null
 }
 
 export interface LiveRawItem {

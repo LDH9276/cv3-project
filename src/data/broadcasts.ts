@@ -5,8 +5,9 @@ import type { BroadcastItem, BroadcastType } from '@/types/broadcast'
 type LiveBroadcast = (typeof liveBroadcasts.list)[number]
 type HomeShoppingBroadcast = (typeof homeShoppingBroadcasts.list)[number]
 
-function formatNumber(value: number | null) {
-  return value?.toLocaleString('ko-KR') ?? '-'
+function formatNumber(value: number | null): string | null {
+  // null을 문자열로 치환하지 않아 UI가 잠김 상태를 별도 요소로 렌더링할 수 있습니다.
+  return value === null ? null : value.toLocaleString('ko-KR')
 }
 
 function normalizeLiveBroadcast(
