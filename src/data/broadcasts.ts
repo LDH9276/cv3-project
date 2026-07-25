@@ -10,6 +10,40 @@ function formatNumber(value: number | null): string | null {
   return value === null ? null : value.toLocaleString('ko-KR')
 }
 
+function formatBroadcastTime(value: string) {
+  if (!/^\d{10}(\d{2})?$/.test(value)) {
+    return value
+  }
+
+  const yearLength = value.length === 12 ? 4 : 2
+  const year =
+    yearLength === 4 ? Number(value.slice(0, 4)) : 2000 + Number(value.slice(0, 2))
+  const month = Number(value.slice(yearLength, yearLength + 2))
+  const day = Number(value.slice(yearLength + 2, yearLength + 4))
+  const hour = Number(value.slice(yearLength + 4, yearLength + 6))
+  const minute = Number(value.slice(yearLength + 6, yearLength + 8))
+  const date = new Date(year, month - 1, day, hour, minute)
+
+  if (
+    date.getFullYear() !== year ||
+    date.getMonth() !== month - 1 ||
+    date.getDate() !== day ||
+    date.getHours() !== hour ||
+    date.getMinutes() !== minute
+  ) {
+    return value
+  }
+
+  return date.toLocaleString('ko-KR', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hourCycle: 'h23',
+  })
+}
+
 function normalizeLiveBroadcast(
   item: LiveBroadcast,
   index: number,
@@ -20,7 +54,7 @@ function normalizeLiveBroadcast(
     platformName: item.platform_id,
     title: item.title,
     category: String(item.cid),
-    broadcastTime: item.datetime_start,
+    broadcastTime: formatBroadcastTime(item.datetime_start),
     metricLabel: '조회수',
     metricValue: formatNumber(item.visit_cnt),
     sales: formatNumber(item.sales_cnt),
@@ -39,7 +73,7 @@ function normalizeHomeShoppingBroadcast(
     platformName: item.platform_name,
     title: item.hsshow_title,
     category: item.cat?.cat_name ?? String(item.cid ?? '-'),
-    broadcastTime: `${item.hsshow_datetime_start} ~ ${item.hsshow_datetime_end}`,
+    broadcastTime: `${formatBroadcastTime(item.hsshow_datetime_start)} ~ ${formatBroadcastTime(item.hsshow_datetime_end)}`,
     metricLabel: '조회수',
     metricValue: formatNumber(item.visit_cnt),
     sales: formatNumber(item.sales_cnt),
