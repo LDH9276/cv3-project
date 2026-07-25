@@ -5,9 +5,28 @@ import type { BroadcastItem, BroadcastType } from '@/types/broadcast'
 type LiveBroadcast = (typeof liveBroadcasts.list)[number]
 type HomeShoppingBroadcast = (typeof homeShoppingBroadcasts.list)[number]
 
+// 라이브 방송 원본의 카테고리 ID를 화면에 표시할 카테고리명으로 변환합니다.
+const liveCategoryNames: Readonly<Record<number, string>> = {
+  50000026: '식품',
+  50000151: '디지털/가전',
+  50000167: '패션의류',
+  50000173: '패션잡화',
+  50000190: '화장품/미용',
+  50000205: '디지털/가전',
+  50000212: '디지털/가전',
+  50000213: '디지털/가전',
+}
+
 // null 값을 유지해 화면에서 잠김 상태를 별도로 렌더링할 수 있도록 숫자를 문자열로 변환합니다.
 function formatNumber(value: number | null): string | null {
   return value === null ? null : value.toLocaleString('ko-KR')
+}
+
+// 카테고리 ID가 없거나 매핑되지 않은 경우에도 화면에 안전하게 표시할 값을 반환합니다.
+function getLiveCategoryName(categoryId: number | null) {
+  return categoryId === null
+    ? '-'
+    : (liveCategoryNames[categoryId] ?? String(categoryId))
 }
 
 interface BroadcastDateTime {
@@ -65,7 +84,7 @@ function normalizeLiveBroadcast(
     rank: index + 1,
     platformName: item.platform_id,
     title: item.title,
-    category: String(item.cid),
+    category: getLiveCategoryName(item.cid),
     broadcastDate: broadcastDateTime.date,
     broadcastWeekday: broadcastDateTime.weekday,
     broadcastTime: broadcastDateTime.time,
