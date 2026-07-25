@@ -69,6 +69,11 @@ main{
   text-overflow: ellipsis;
 }
 
+.item-platform{
+  font-size: 14px;
+  color: #454545;
+}
+
 .broadcast-datetime{
   display: grid;
   gap: 0.25rem;
