@@ -4,6 +4,7 @@ import ItemList from '@/components/ItemList'
 import { broadcastsByType } from '@/data/broadcasts'
 import type { BroadcastType } from '@/types/broadcast'
 
+// 선택된 방송 유형에 맞는 목록을 렌더링하고 탭 상태를 관리합니다.
 function App() {
   const [broadcastType, setBroadcastType] =
     useState<BroadcastType>('live')

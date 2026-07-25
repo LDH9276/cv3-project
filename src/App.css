@@ -1,18 +1,28 @@
 /* 퍼블리싱 스타일은 제작자가 추가합니다. */
 .data-label{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
   li{
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1.2fr) repeat(4, minmax(0, 0.7fr));
     align-items: center;
-    gap: 2em;
+    gap: 1rem;
+    padding: 0.75rem 0;
   }
   li~li{
     border-top: 1px solid #ddd;
   }
 }
 
+.data-legend{
+  font-weight: 700;
+}
+
 .title-wrap{
   display: block;
-  width: 50%;
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

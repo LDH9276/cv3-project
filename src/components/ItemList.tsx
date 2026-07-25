@@ -10,6 +10,7 @@ interface DataValueProps {
   value: string | null
 }
 
+// 데이터 값이 null일 때 잠김 안내를 표시하고 로그인 안내 박스의 열림 상태를 관리합니다.
 function DataValue({ value }: DataValueProps) {
   const [isHintOpen, setIsHintOpen] = useState(false)
   const hintId = useId()
@@ -40,6 +41,7 @@ function DataValue({ value }: DataValueProps) {
   )
 }
 
+// 선택된 방송 유형의 목록을 최대 10개까지 화면에 표시합니다.
 function ItemList({ broadcastType, items }: ItemListProps) {
 
   return (
@@ -52,38 +54,32 @@ function ItemList({ broadcastType, items }: ItemListProps) {
         <p>표시할 방송 데이터가 없습니다.</p>
       ) : (
         <ul className='data-label'>
-          {broadcastType === 'live' ?
-            <li>
-              <p>&nbsp;</p>
-              <div className='title-wrap'>
-                <span>제목</span>
-              </div>
-            </li>
-
-            :
-            <li>
-              <p>&nbsp;</p>
-              <div className='title-wrap'>
-                <span>제목</span>
-              </div>
-            </li>
-          }
-
+          <li className='data-legend'>
+            <span>방송정보</span>
+            <span>분류</span>
+            <span>방송시간</span>
+            <span>조회수</span>
+            <span>판매량</span>
+            <span>매출액</span>
+            <span>상품수</span>
+          </li>
 
           {items.slice(0, 10).map((item) => (
             <li key={item.id}>
-              <p>{item.rank}</p>
-              <div className="title-wrap">
+              <div className='title-wrap'>
                 <p className='item-title'>{item.title}</p>
                 <p className='item-platform'>{item.platformName}</p>
               </div>
+              <span>{item.category}</span>
               <div className='broadcast-datetime'>
                 <span>{item.broadcastDate}</span>
+                <span>({item.broadcastWeekday})</span>
                 <span>{item.broadcastTime}</span>
               </div>
               <DataValue value={item.metricValue} />
               <DataValue value={item.sales} />
               <DataValue value={item.revenue} />
+              <DataValue value={item.productCount} />
             </li>
           ))}
         </ul>
